@@ -21,6 +21,9 @@ public class CustomServlet extends HttpServlet {
         resp.getWriter().println("<head>");
         resp.getWriter().println("<body>");
         resp.getWriter().println("<h1>Hello, This is custom servlet.</h1>");
+        resp.getWriter().println("<h1>my name is "
+            + getServletContext().getAttribute("name")
+            + ".</h1>");
         resp.getWriter().println("</body>");
         resp.getWriter().println("</head>");
         resp.getWriter().println("</html>");

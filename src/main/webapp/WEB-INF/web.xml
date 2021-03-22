@@ -5,15 +5,19 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
-    <!-- Custom Servlet -->
-    <servlet>
-      <servlet-name>my-servlet</servlet-name>
-      <servlet-class>min.study.CustomServlet</servlet-class>
-    </servlet>
+  <listener>
+    <listener-class>min.study.CustomListener</listener-class>
+  </listener>
 
-    <servlet-mapping>
-      <servlet-name>my-servlet</servlet-name>
-      <url-pattern>/my-servlet</url-pattern>
-    </servlet-mapping>
+  <!-- Custom Servlet -->
+  <servlet>
+    <servlet-name>my-servlet</servlet-name>
+    <servlet-class>min.study.CustomServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>my-servlet</servlet-name>
+    <url-pattern>/my-servlet</url-pattern>
+  </servlet-mapping>
 
 </web-app>
